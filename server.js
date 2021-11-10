@@ -1,13 +1,12 @@
+//Requires express, the notes route, and the api route.
 const express = require('express');
 const htmlNotes = require('./routes/notes');
 const api = require('./routes/api');
 
-
+//Requires middleware and path
 const path = require('path');
 const { clog } = require('./middleware/clog');
-//const api = require('./routes/index.js');
-
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
