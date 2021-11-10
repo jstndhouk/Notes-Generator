@@ -10,6 +10,7 @@ const router=require('express').Router();
 const path = require('path');
 const notesData = require('../db/db.json');
 
+//Get route for the notes data
 router.get('/notes', (req, res) => {
 res.json(notesData)
 })
